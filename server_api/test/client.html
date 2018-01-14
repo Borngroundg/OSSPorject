@@ -1,0 +1,19 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<script src="/socket.io/socket.io.js">
+</script>
+<script>
+    var socket = io(); 
+
+    socket.on('connect',function(){
+      console.log('서버와 연결'); 
+    });
+</script>
+</head>
+
+<body>
+    <h1>socket test</h1>
+   
+</body>
+</html>

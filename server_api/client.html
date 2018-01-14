@@ -1,0 +1,36 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<script src="/socket.io/socket.io.js"></script>
+<script>
+    var socket = io(); 
+
+    socket.on('connect',function(req,res){
+      console.log('서버와 연결'); 
+    });
+</script>
+
+</head>
+
+<body>
+    <h1>socket test</h1>
+    <script>
+   socket.on('news', function (data) {
+       //alert(data); 
+   console.log(data);
+   document.writeln('<li>'); 
+    document.writeln(data); 
+    document.writeln('</li>');
+/*
+        
+    socket.on('message',function(msg){
+    document.writeln('<li>'); 
+    document.writeln(msg); 
+    document.writeln('</li>');
+    });    
+  */
+});  
+    
+    </script>
+</body>
+</html>
